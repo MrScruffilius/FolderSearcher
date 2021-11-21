@@ -25,7 +25,7 @@ public class Searcher {
 
         while (temp2 != 0 && temp2 != 1) {
             System.out.println("Input option:");
-            System.out.println("\t (0) look for empty folders");
+            System.out.println("\t (0) look for empty directories");
             System.out.println("\t (1) look for file sizes");
 
             temp2 = si.nextInt();
@@ -43,7 +43,7 @@ public class Searcher {
 
     /**
      * The File system will be printed in a tree-like-structure
-     * non-empty folders are surrounded by [ and ]
+     * non-empty directories are surrounded by [ and ]
      * empty ones are just written without
      **/
     static void look(Path path, int currDepth, int maxDepth) {
@@ -80,8 +80,8 @@ public class Searcher {
 
     /**
      * The File system will be printed in a tree-like-structure
-     * non-empty folders are surrounded by [ and ]
-     * empty folders aren't printed at all
+     * non-empty directories are surrounded by [ and ]
+     * empty directories aren't printed at all
      * files are printed wit %- in front of them and their size a little after their name
      **/
     static void filelook(Path path, int currDepth, int maxDepth) {
